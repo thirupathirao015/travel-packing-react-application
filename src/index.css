@@ -199,15 +199,24 @@ input[type="checkbox"] {
   color: #fff;
 }
 
-/* CONFIRM POPUP (CLEAR LIST) END */
+/* Developer msg line laptop*/
+.developer {
+  position: absolute; /* 🔑 remove from normal flow */
+  right: 1.6rem; /* move to right corner */
+  bottom: 0.8rem; /* move slightly down */
+  font-size: 1.8rem;
+  opacity: 0.75;
+  font-weight: 500;
+}
 
-/* Developer msg line*/
-/* CONFIRM POPUP (CLEAR LIST) END */
+/* Developer msg line for mobile*/
 @media (max-width: 600px) {
+  .stats {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .developer {
-    position: static; /* back into normal layout */
-    display: block;
-    margin-top: 0.8rem;
-    text-align: right;
+    white-space: normal;
   }
 }
