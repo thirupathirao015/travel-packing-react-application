@@ -16,15 +16,20 @@ export default function Stats({ items }) {
 
   return (
     <footer className="stats">
-      <em>
-        {percentage === 100
-          ? "you got everything ready to fly ✈"
-          : `You have ${numItems} items on your list, and you already packed
+      <div className="stats-row">
+        <em>
+          {percentage === 100
+            ? "you got everything ready to fly ✈"
+            : `You have ${numItems} items on your list, and you already packed
         ${packedItems} (${percentage}%)`}
-      </em>
-      <span className="developer">
-        Developed by Ramisetti Thirupathi 💻 👍{" "}
-      </span>
+        </em>
+      </div>
+
+      <div className="developer-row">
+        <span className="developer">
+          Developed by Ramisetti Thirupathi 💻 👍
+        </span>
+      </div>
     </footer>
   );
 }
