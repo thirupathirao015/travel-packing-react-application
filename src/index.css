@@ -154,7 +154,7 @@ input[type="checkbox"] {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 140vh;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
@@ -202,11 +202,12 @@ input[type="checkbox"] {
 /* CONFIRM POPUP (CLEAR LIST) END */
 
 /* Developer msg line*/
-.developer {
-  position: absolute; /* 🔑 remove from normal flow */
-  right: 1.6rem; /* move to right corner */
-  bottom: 0.8rem; /* move slightly down */
-  font-size: 1.8rem;
-  opacity: 0.75;
-  font-weight: 500;
+/* CONFIRM POPUP (CLEAR LIST) END */
+@media (max-width: 600px) {
+  .developer {
+    position: static; /* back into normal layout */
+    display: block;
+    margin-top: 0.8rem;
+    text-align: right;
+  }
 }
